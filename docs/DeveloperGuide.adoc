@@ -1,4 +1,4 @@
-= AddressBook Level 4 - Developer Guide
+﻿= AddressBook Level 4 - Developer Guide
 :toc:
 :toc-title:
 :toc-placement: preamble
@@ -732,6 +732,30 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 |`* *` |user |hide link:#private-contact-detail[private contact details] by default |minimize chance of someone else seeing them by accident
 
 |`*` |user with many persons in the address book |sort persons by name |locate a person easily
+
+|`*` |user |find a person by date added |locate details of a persons without having to go through the entire list
+
+|`* *` |user |adjust the font size of the display contacts |I dont have to squint when I look for contacts 
+
+|`* *` |user with many contacts |group my contacts |I can find a contact easier by searching for the group name 
+
+|`*` |user | add pictures to my contacts |I can better identify them with a picture 
+
+|`* * *` |user |add description to my contacts |I can make my contacts feel unique 
+
+|`* *` |user |see my log history |retrieve information if I need to 
+
+|`* *` |user |add a event note to any contact |I remind myself about events I have with this contact 
+
+|`*` |user with many computers |sync my data with different computers | I can easily assess address book on my many computers
+
+|`*` |user who loves social media |like a integration of social media platforms with address book | I can browse social media while using address book 
+
+|`*` |user who loves forums |Like a forum feature |I can post any questions so that my contacts can answer 
+
+|`*` |user who loves going out |'HangOut' feature shows that I want to hang out |My contacts who sees that I am avaliable will contact me to hang out 
+ 
+
 |=======================================================================
 
 {More to be added}
