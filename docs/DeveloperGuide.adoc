@@ -733,17 +733,17 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* * *` |user |find a person by tag |locate details of persons without having to go through the entire list
 
-|`* * *` |user |sort the address book |organise my contacts
-
-|`* * *` |user |edit my contacts |update my contacts easily
+|`* * *` |user |list my contacts by their tags |locate my contact more easily
 
 |`* *` |user |hide link:#private-contact-detail[private contact details] by default |minimize chance of someone else seeing them by accident
 
 |`* *` |user |to create favourite lists of contacts |find my most important contacts easily
 
-|`* *` |user |undo my previous action |amend my mistakes efficiently
+|`*` |user |store my contact's birthdays |keep track of my contact's birthdays
 
-|`* *` |user |view my recent actions |retrace my steps if I identify mistakes in the address book
+|`*` |user |be notified of upcoming birthdays of my contacts |will not forget my contact's birthday
+
+|`*` |user with other address books |import data from address books |merge their data
 
 |`*` |user with many persons in the address book |sort persons by name |locate a person easily
 
