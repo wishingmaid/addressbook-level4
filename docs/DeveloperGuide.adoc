@@ -729,9 +729,25 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* * *` |user |find a person by name |locate details of persons without having to go through the entire list
 
+|`* * *` |user |find a person by phone number |locate details of persons without having to go through the entire list
+
+|`* * *` |user |find a person by tag |locate details of persons without having to go through the entire list
+
+|`* * *` |user |sort the address book |organise my contacts
+
+|`* * *` |user |edit my contacts |update my contacts easily
+
 |`* *` |user |hide link:#private-contact-detail[private contact details] by default |minimize chance of someone else seeing them by accident
 
+|`* *` |user |to create favourite lists of contacts |find my most important contacts easily
+
+|`* *` |user |undo my previous action |amend my mistakes efficiently
+
+|`* *` |user |view my recent actions |retrace my steps if I identify mistakes in the address book
+
 |`*` |user with many persons in the address book |sort persons by name |locate a person easily
+
+|`*` |user with many persons in the address book |add profile pictures to contacts |identify my contacts easily
 |=======================================================================
 
 {More to be added}
