@@ -773,20 +773,37 @@ Use case resumes at step 2.
 *MSS*
 
 1. User requests to add person
-2. Addressbook adds the person
+2. AddressBook adds the person
 +
 Use case ends.
 
 *Extensions*
 
 [none]
-* 1a. The input parameters are invalid
+* 1a. The input parameters are invalid.
 +
 [none]
-** 1a1. Addressbook shows an error message.
+** 1a1. AddressBook shows an error message.
 +
 Use case resumes at step 1.
 
+[discrete]
+=== Use case: List persons
+
+*MSS*
+
+1. User requests to list persons
+2. AddressBook shows a list of persons
++
+Use case ends.
+
+*Extensions*
+
+[none]
+* 2a. The list is empty.
++
+Use case ends.
++
 {More to be added}
 
 [appendix]
