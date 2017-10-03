@@ -748,6 +748,17 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 |`*` |user with many persons in the address book |sort persons by name |locate a person easily
 
 |`*` |user with many persons in the address book |add profile pictures to contacts |identify my contacts easily
+
+|`* ` |user | send out mass email to people with the same tags | disseminate information effectively
+
+|`* ` |user | link me and my friends to our social media accounts | update and view others social media accounts easily
+
+|`* ` |user who is an employer | add notes to certain contacts with timers | keep track of tasks that I assign people to do
+
+|`* ` |user | have a synced task list with people with the same tags | keep track of each persons work progress
+
+|`* ` |user | integrate my address book with my phone contacts | easily add contacts to either address book or my phone contacts and have them be synced
+
 |=======================================================================
 
 {More to be added}
