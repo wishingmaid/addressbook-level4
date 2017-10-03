@@ -727,11 +727,25 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* * *` |user |delete a person |remove entries that I no longer need
 
+|`* * *` |user |find a person by email |locate details of persons without having to go through the entire list
+
 |`* * *` |user |find a person by name |locate details of persons without having to go through the entire list
+
+|`* * *` |user |clear the storage in the address book |restart and empty the address book
 
 |`* *` |user |hide link:#private-contact-detail[private contact details] by default |minimize chance of someone else seeing them by accident
 
+|`* *` |user |add multiple phone numbers to one contact |do not have to create another contact to add a person's secondary number(s)
+
+|`* *` |user |have an edit contact function |do not have to delete the contact and recreate contact when changing a person's particulars
+
+|`* *` |user |remove tag function |remove a specified tag from all contacts with that tag
+
+|`* *` |user |rename tag function |rename a specified tag from all contacts with that tag
+
 |`*` |user with many persons in the address book |sort persons by name |locate a person easily
+
+|`*` |user with many persons in the address book |view list of persons by first or last name |locate a person easily
 |=======================================================================
 
 {More to be added}
