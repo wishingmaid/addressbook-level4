@@ -729,9 +729,25 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* * *` |user |find a person by name |locate details of persons without having to go through the entire list
 
+|`* * *` |user |find a person by phone number |locate details of persons without having to go through the entire list
+
+|`* * *` |user |find a person by tag |locate details of persons without having to go through the entire list
+
+|`* * *` |user |list my contacts by their tags |locate my contact more easily
+
 |`* *` |user |hide link:#private-contact-detail[private contact details] by default |minimize chance of someone else seeing them by accident
 
+|`* *` |user |to create favourite lists of contacts |find my most important contacts easily
+
+|`*` |user |store my contact's birthdays |keep track of my contact's birthdays
+
+|`*` |user |be notified of upcoming birthdays of my contacts |will not forget my contact's birthday
+
+|`*` |user with other address books |import data from address books |merge their data
+
 |`*` |user with many persons in the address book |sort persons by name |locate a person easily
+
+|`*` |user with many persons in the address book |add profile pictures to contacts |identify my contacts easily
 |=======================================================================
 
 {More to be added}
