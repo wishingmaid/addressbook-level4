@@ -823,6 +823,9 @@ Use case resumes at step 2.
 .  Should work on any link:#mainstream-os[mainstream OS] as long as it has Java `1.8.0_60` or higher installed.
 .  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
 .  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
+.  Should be able to run in 32bit or 64bit Windows/Linux/Mac Systems.
+.  Default program should not take up more than 1GB of space.
+.  Program should be easy for a non-tech savvy person to install without having to declare classpaths and change environmental variables 
 
 {More to be added}
 
