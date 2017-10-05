@@ -28,12 +28,12 @@ Responsibilities: UI
 
 '''
 
-=== Johnny Doe
-image::yijinl.jpg[width="150", align="left"]
-{empty}[http://github.com/yijinl[github]] [<<johndoe#, portfolio>>]
+=== Yan Wei Cheng
+image::yanwc.png[width="150", align="left"]
+{empty}[https://github.com/Affalen[github]] [<<yanweicheng#, portfolio>>]
 
 Role: Developer +
-Responsibilities: Data
+Responsibilities: Storage
 
 '''
 
@@ -43,14 +43,5 @@ image::m133225.jpg[width="150", align="left"]
 
 Role: Developer +
 Responsibilities: Dev Ops + Threading
-
-'''
-
-=== Benson Meier
-image::yl_coder.jpg[width="150", align="left"]
-{empty}[http://github.com/yl-coder[github]] [<<johndoe#, portfolio>>]
-
-Role: Developer +
-Responsibilities: UI
 
 '''
