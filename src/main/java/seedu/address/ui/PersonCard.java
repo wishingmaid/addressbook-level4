@@ -1,6 +1,6 @@
 package seedu.address.ui;
 import java.util.HashMap;
-import java.util.Random; 
+import java.util.Random;
 
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
@@ -56,10 +56,8 @@ public class PersonCard extends UiPart<Region> {
         if (!tagColors.containsKey(tagValue)) {
             tagColors.put(tagValue, colors[random.nextInt(colors.length)]);
         }
-        
-        return tagColors.get(tagValue);     
+        return tagColors.get(tagValue);
     }
- 
     /**
      * Binds the individual UI elements to observe their respective {@code Person} properties
      * so that they will be notified of any changes.
