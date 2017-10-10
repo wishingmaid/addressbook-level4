@@ -28,6 +28,15 @@ Responsibilities: UI
 
 '''
 
+=== Wong Zeng Feng
+image::zfwong.jpg[width="150", align="left"]
+{empty}[https://github.com/zengfengw[github]] [<<zengfengw#, portfolio>>]
+
+Role: Developer +
+Responsibilities: Model
+
+'''
+
 === Yan Wei Cheng
 image::yanwc.png[width="150", align="left"]
 {empty}[https://github.com/Affalen[github]] [<<yanweicheng#, portfolio>>]
