@@ -29,20 +29,20 @@ Responsibilities: UI
 
 '''
 
+=== Wong Zeng Feng
+image::zfwong.jpg[width="150", align="left"]
+{empty}[https://github.com/zengfengw[github]] [<<zengfengw#, portfolio>>]
+
+Role: Developer +
+Responsibilities: Model
+
+'''
+
 === Yan Wei Cheng
 image::yanwc.png[width="150", align="left"]
 {empty}[https://github.com/Affalen[github]] [<<yanweicheng#, portfolio>>]
 
 Role: Developer +
 Responsibilities: Storage
-
-'''
-
-=== Johnny Roe
-image::m133225.jpg[width="150", align="left"]
-{empty}[http://github.com/m133225[github]] [<<johndoe#, portfolio>>]
-
-Role: Developer +
-Responsibilities: Dev Ops + Threading
 
 '''
