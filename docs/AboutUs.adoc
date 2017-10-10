@@ -18,14 +18,6 @@ image::youkuan.jpg[width="150", align="left"]
 Role: Developer +
 Responsibilities: Logic
 
-'''
-
-=== John Roe
-image::lejolly.jpg[width="150", align="left"]
-{empty}[http://github.com/lejolly[github]] [<<johndoe#, portfolio>>]
-
-Role: Team Lead +
-Responsibilities: UI
 
 '''
 
@@ -36,6 +28,7 @@ image::zfwong.jpg[width="150", align="left"]
 Role: Developer +
 Responsibilities: Model
 
+
 '''
 
 === Yan Wei Cheng
@@ -44,5 +37,17 @@ image::yanwc.png[width="150", align="left"]
 
 Role: Developer +
 Responsibilities: Storage
+
+
+'''
+
+=== Yap Zuo Xuan
+image::yapzx.jpg[width="150", align="left"]
+{empty}[http://github.com/wishingmaid[github]] [<<yapzuoxuan#, portfolio>>]
+
+Role: Developer +
+Responsibilities: UI
+=======
+
 
 '''
