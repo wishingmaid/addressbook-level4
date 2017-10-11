@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class Photo {
 
-private Image photo; 
+private Image photo;
 
 public Photo(String filepath) throws IOException {
     try {

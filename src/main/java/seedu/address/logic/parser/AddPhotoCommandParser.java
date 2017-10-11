@@ -33,5 +33,4 @@ public class AddPhotoCommandParser implements Parser<AddPhotoCommand> {
 
         }
     }
-
 }
