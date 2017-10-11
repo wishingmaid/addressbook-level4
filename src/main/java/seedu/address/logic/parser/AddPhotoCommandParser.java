@@ -31,7 +31,6 @@ public class AddPhotoCommandParser implements Parser<AddPhotoCommand> {
                     String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddPhotoCommand.MESSAGE_USAGE));
 
 
-        } 
+        }
     }
-    
 }
