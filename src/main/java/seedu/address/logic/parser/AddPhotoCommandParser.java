@@ -22,15 +22,14 @@ public class AddPhotoCommandParser implements Parser<AddPhotoCommand> {
     public AddPhotoCommand parse(String args) throws ParseException {
         try {
             Index index = ParserUtil.parseIndex(args);
-            ArgumentMultimap argMultimap = 
+            ArgumentMultimap argMultimap =
                     ArgumentTokenizer.tokenize(args, PREFIX_FILEPATH);
-            //String filepath 
+            //String filepath
             return new AddPhotoCommand(index);
         } catch (IllegalValueException ive) {
             throw new ParseException(
                     String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddPhotoCommand.MESSAGE_USAGE));
 
 
-        }
-    }
+        } }
 }
