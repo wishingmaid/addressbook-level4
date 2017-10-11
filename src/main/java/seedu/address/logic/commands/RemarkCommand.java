@@ -61,6 +61,7 @@ public class RemarkCommand extends UndoableCommand {
         model.getFilteredPersonList();
         return new CommandResult(generateSuccessMessage(editedPerson));
     }
+    /**Generate success message*/
     private String generateSuccessMessage(ReadOnlyPerson personToEdit) {
         if (!remark.value.isEmpty()) {
             return String.format(MESSAGE_ADD_REMARK_SUCCESS, personToEdit);
