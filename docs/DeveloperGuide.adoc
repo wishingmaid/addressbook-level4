@@ -725,7 +725,7 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* * *` |user |add a new person |
 
-|`* * *` |user |add description to my contacts |I can make my contacts feel unique
+|`* * *` |user |add description to my contacts |make my contacts feel unique
 
 |`* * *` |user |delete a person |remove entries that I no longer need
 
@@ -755,13 +755,13 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* *` |user |to create favourite lists of contacts |find my most important contacts easily
 
-|`* *` |user |adjust the font size of the display contacts |I dont have to squint when I look for contacts
+|`* *` |user |adjust the font size of the display contacts |not squint my eyes when looking at the contacts
 
-|`* *` |user with many contacts |group my contacts |I can find a contact easier by searching for the group name
+|`* *` |user with many contacts |group my contacts |find a contact easier by searching for the group name
 
 |`* *` |user |see my log history |retrieve information if I need to
 
-|`* *` |user |add a event note to any contact |I remind myself about events I have with this contact
+|`* *` |user |add a event note to any contact |remind myself about events I have with this contact
 
 |`*` |user |store my contact's birthdays |keep track of my contact's birthdays
 
@@ -773,23 +773,23 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`*` |user with many persons in the address book |add profile pictures to contacts |identify my contacts easily
 
-|`*` |user who loves social media |like a integration of social media platforms with address book | I can browse social media while using address book
+|`*` |user who loves social media |like a integration of social media platforms with address book |browse social media while using address book
 
-|`*` |user who loves forums |Like a forum feature |I can post any questions so that my contacts can answer
+|`*` |user who loves forums |Like a forum feature |post any questions so that my contacts can answer
 
-|`*` |user | add pictures to my contacts |I can better identify them with a picture
+|`*` |user | add pictures to my contacts |better identify them with a picture
 
-|`*` |user who loves going out |'HangOut' feature shows that I want to hang out |My contacts who sees that I am avaliable will contact me to hang out
+|`*` |user who loves going out |have a 'HangOut' feature |tell my contacts that I am available to hang out
 
-|`* ` |user | send out mass email to people with the same tags | disseminate information effectively
+|`* ` |user |send out mass email to people with the same tags |disseminate information effectively
 
-|`* ` |user | link me and my friends to our social media accounts | update and view others social media accounts easily
+|`* ` |user |link me and my friends to our social media accounts |update and view others social media accounts easily
 
-|`* ` |user who is an employer | add notes to certain contacts with timers | keep track of tasks that I assign people to do
+|`* ` |user who is an employer |add notes to certain contacts with timers |keep track of tasks that I assign people to do
 
-|`* ` |user | have a synced task list with people with the same tags | keep track of each persons work progress
+|`* ` |user |have a synced task list with people with the same tags |keep track of each persons work progress
 
-|`* ` |user | integrate my address book with my phone contacts | easily add contacts to either address book or my phone contacts and have them be synced
+|`* ` |user |integrate my address book with my phone contacts |easily add contacts to either address book or my phone contacts and have them be synced
 
 |`*` |user with many persons in the address book |view list of persons by first or last name |locate a person easily
 
