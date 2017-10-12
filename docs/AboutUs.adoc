@@ -41,22 +41,11 @@ Responsibilities: Storage
 
 '''
 
-=== Johnny Roe
-image::m133225.jpg[width="150", align="left"]
-{empty}[http://github.com/m133225[github]] [<<johndoe#, portfolio>>]
-
-Role: Developer +
-Responsibilities: Dev Ops + Threading
-
-'''
-
-=== Benson Meier
-image::yl_coder.jpg[width="150", align="left"]
-{empty}[http://github.com/yl-coder[github]] [<<johndoe#, portfolio>>]
+=== Yap Zuo Xuan
+image::yapzx.jpg[width="150", align="left"]
+{empty}[http://github.com/wishingmaid[github]] [<<yapzuoxuan#, portfolio>>]
 
 Role: Developer +
 Responsibilities: UI
-=======
-
 
 '''
