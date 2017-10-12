@@ -11,12 +11,12 @@ public class AddPhotoCommand extends UndoableCommand {
     public static final String MESSAGE_EXISTING_PHOTO = "There is already a photo tied to this contact";
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": adds a photo to the person identified by the index number used in the last person listing.\n"
-            + "Parameters: INDEX (must be a positive integer) "+ PREFIX_FILEPATH + " (must be valid filepath)\n"
+            + "Parameters: INDEX (must be a positive integer) " + PREFIX_FILEPATH + " (must be valid filepath)\n"
             + "Example: " + COMMAND_WORD + " 1 " + "C:\\users\\wishingmaid\\Desktop\\imageFolder\\ThiccBooks";
 
     public AddPhotoCommand(Index index) {
     }
-    public CommandResult executeUndoableCommand(){
+    public CommandResult executeUndoableCommand() {
         return null;
     }
 }
