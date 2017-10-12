@@ -1,6 +1,6 @@
 package seedu.address.model;
 
-import java.awt.*;
+import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -17,7 +17,7 @@ public class Photo {
         try {
             File sourceimage = new File(filepath);
             this.photo = ImageIO.read(sourceimage);
-        } catch(IOException e) {
+        } catch (IOException e) {
             System.out.println("Not a valid filepath");
         }
     }
