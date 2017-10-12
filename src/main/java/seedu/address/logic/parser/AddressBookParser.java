@@ -75,7 +75,7 @@ public class AddressBookParser {
 
         case RemarkCommand.COMMAND_WORD:
             return new RemarkCommandParser().parse(arguments);
-
+            
         case ListCommand.COMMAND_ALIAS:
         case ListCommand.COMMAND_WORD:
             return new ListCommand();
