@@ -20,10 +20,8 @@ public class Photo {
         } catch(IOException e) {
             System.out.println("Not a valid filepath");
         }
-    
     }
     public Image getPhoto() { 
-        return photo; 
+        return photo;
     }
 }
-
