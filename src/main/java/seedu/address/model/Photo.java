@@ -21,7 +21,7 @@ public class Photo {
             System.out.println("Not a valid filepath");
         }
     }
-    public Image getPhoto() { 
+    public Image getPhoto() {
         return photo;
     }
 }
