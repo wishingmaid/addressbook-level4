@@ -2,6 +2,8 @@ package seedu.address.model.person;
 
 import static java.util.Objects.requireNonNull;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -11,6 +13,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import seedu.address.commons.util.CollectionUtil;
 import seedu.address.model.person.exceptions.DuplicatePersonException;
+import seedu.address.model.person.exceptions.EmptyBookException;
 import seedu.address.model.person.exceptions.PersonNotFoundException;
 
 /**
@@ -48,6 +51,20 @@ public class UniquePersonList implements Iterable<Person> {
         internalList.add(new Person(toAdd));
     }
 
+    /**
+     * Sorts persons in address book by field and in order specified.
+     * @param sortComparator
+     * @throws EmptyBookException
+     */
+    public void sort(Comparator sortComparator) throws EmptyBookException
+    {
+        requireNonNull(sortComparator);
+        if (internalList.size() < 1) {
+            throw new EmptyBookException();
+        }
+
+        Collections.sort(internalList, sortComparator);
+    }
     /**
      * Replaces the person {@code target} in the list with {@code editedPerson}.
      *
