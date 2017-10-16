@@ -252,10 +252,10 @@ Format: `clear`
 Lists contacts added in the past 24 hours. +
 Format: `listrecent`
 
-=== Store contact's birthday : `birthday` (Coming in v2.0)
+=== Import data from Address Books : `import` (Coming in v2.0)
 
-Adds a birthday parameter to a contact. +
-Format: `birthday INDEX b/[BIRTHDAY]`
+Imports data from external Address Books and merges into the current Address Book. +
+Format: `import [FILEPATH]`
 
 === Mass email : `emailall` (Coming in v2.0)
 
