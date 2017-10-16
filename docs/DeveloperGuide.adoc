@@ -741,7 +741,7 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* * *` |user |list my contacts by their tags |locate my contact more easily
 
-|`* * *` |user |find a person by date added |locate details of a persons without having to go through the entire list
+|`* * *` |user |list recently added contacts |locate details of a persons without having to go through the entire list
 
 |`* *` |user |rename tag function |rename a specified tag from all contacts with that tag
 
@@ -753,7 +753,7 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 
 |`* *` |user |hide link:#private-contact-detail[private contact details] by default |minimize chance of someone else seeing them by accident
 
-|`* *` |user |to create favourite lists of contacts |find my most important contacts easily
+|`* *` |user |create favourite lists of contacts |find my most important contacts easily
 
 |`* *` |user |adjust the font size of the display contacts |not squint my eyes when looking at the contacts
 
@@ -776,8 +776,6 @@ Priorities: High (must have) - `* * \*`, Medium (nice to have) - `* \*`, Low (un
 |`*` |user who loves social media |like a integration of social media platforms with address book |browse social media while using address book
 
 |`*` |user who loves forums |Like a forum feature |post any questions so that my contacts can answer
-
-|`*` |user | add pictures to my contacts |better identify them with a picture
 
 |`*` |user who loves going out |have a 'HangOut' feature |tell my contacts that I am available to hang out
 
