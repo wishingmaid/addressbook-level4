@@ -76,32 +76,24 @@ public class AddressBookParser {
 
         case RemarkCommand.COMMAND_WORD:
             return new RemarkCommandParser().parse(arguments);
-            
         case AddPhotoCommand.COMMAND_WORD:
-            return new AddPhotoCommandParser().parse(arguments);     
-
+            return new AddPhotoCommandParser().parse(arguments);
         case ListCommand.COMMAND_ALIAS:
         case ListCommand.COMMAND_WORD:
             return new ListCommand();
-        
         case HistoryCommand.COMMAND_ALIAS:
         case HistoryCommand.COMMAND_WORD:
             return new HistoryCommand();
-        
         case ExitCommand.COMMAND_WORD:
             return new ExitCommand();
-        
         case HelpCommand.COMMAND_WORD:
             return new HelpCommand();
-        
         case UndoCommand.COMMAND_ALIAS:
         case UndoCommand.COMMAND_WORD:
             return new UndoCommand();
-        
         case RedoCommand.COMMAND_ALIAS:
         case RedoCommand.COMMAND_WORD:
             return new RedoCommand();
-        
         default:
             throw new ParseException(MESSAGE_UNKNOWN_COMMAND);
         }
