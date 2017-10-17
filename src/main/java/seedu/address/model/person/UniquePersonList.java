@@ -22,7 +22,6 @@ import seedu.address.model.person.exceptions.PersonNotFoundException;
  * Supports a minimal set of list operations.
  *
  * @see Person#equals(Object)
- * @see CollectionUtil#elementsAreUnique(Collection)
  */
 public class UniquePersonList implements Iterable<Person> {
 
@@ -59,7 +58,8 @@ public class UniquePersonList implements Iterable<Person> {
     public void sort(Comparator sortComparator) throws EmptyBookException
     {
         requireNonNull(sortComparator);
-        if (internalList.size() < 1) {
+        if (internalList.size() < 1)
+        {
             throw new EmptyBookException();
         }
 

@@ -2,13 +2,13 @@ package seedu.address.model;
 
 import static java.util.Objects.requireNonNull;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
-import java.util.Comparator;
 
 import javafx.collections.ObservableList;
 import seedu.address.model.person.Person;
@@ -94,8 +94,8 @@ public class AddressBook implements ReadOnlyAddressBook {
         persons.add(newPerson);
     }
 
-    public void sortPerson(Comparator<ReadOnlyPerson> sortType) throws EmptyBookException {
-        persons.sort(sortType);
+    public void sortPerson(Comparator<ReadOnlyPerson> sortBy) throws EmptyBookException {
+        persons.sort(sortBy);
     }
 
     /**

@@ -88,9 +88,9 @@ public class ModelManager extends ComponentManager implements Model {
     }
 
     @Override
-    public void sortPerson(Comparator<ReadOnlyPerson> sortType) throws EmptyBookException
+    public void sortPerson(Comparator<ReadOnlyPerson> sortBy) throws EmptyBookException
     {
-        addressBook.sortPerson(sortType);
+        addressBook.sortPerson(sortBy);
     }
 
     @Override
