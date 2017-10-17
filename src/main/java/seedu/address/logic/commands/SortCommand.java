@@ -47,8 +47,7 @@ public class SortCommand extends UndoableCommand {
         Comparator<ReadOnlyPerson> sortComparator = getSortComparator(this.parameter);
         try {
             model.sortPerson(sortComparator);
-        }
-        catch (EmptyBookException a) {
+        } catch (EmptyBookException a) {
             throw new CommandException(MESSAGE_EMPTY_BOOK);
         }
 
@@ -71,7 +70,7 @@ public class SortCommand extends UndoableCommand {
             this.sortParam = "phone";
             return (o1, o2) -> o1.getPhone().toString().compareToIgnoreCase(o2.getPhone().toString());
 
-         case PREFIX_ADDRESS:
+        case PREFIX_ADDRESS:
             this.sortParam = "address";
             return (o1, o2) -> o1.getAddress().toString().compareToIgnoreCase(o2.getAddress().toString());
 
