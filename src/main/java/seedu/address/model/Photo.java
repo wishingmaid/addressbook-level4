@@ -1,8 +1,8 @@
 package seedu.address.model;
 
+import static java.util.Objects.requireNonNull;
 
 import javafx.scene.image.Image;
-import static java.util.Objects.requireNonNull;
 
 /**
  * Represents a Photo in the address book.
@@ -10,25 +10,27 @@ import static java.util.Objects.requireNonNull;
 
 public class Photo {
 
-    public Image image;
-    public String filepath;
-    private final String DEFAULT_PHOTO_URL = "/images/noPhoto.png";
+    private Image image;
+    private String filepath;
+    private final String DEFAULT_PHOTOURL = "/images/noPhoto.png";
     public Photo(String filepath) {
         requireNonNull(filepath);
-        if(filepath.equals("")) {
-            this.filepath = DEFAULT_PHOTO_URL;
+        if (filepath.equals("")) {
+            this.filepath = DEFAULT_PHOTOURL;
            // this.image= new Image(getClass().getResource(DEFAULT_PHOTO_URL).toExternalForm());
         } else {
             this.filepath = filepath;
         }
-        this.image= new Image(getClass().getResource(DEFAULT_PHOTO_URL).toExternalForm());
-        /*try {
-            File file = new File("C:/users/pigir/Desktop/NUS/A0155314M.jpg");
-            String localUrl = file.toURI().toURL().toString();
-            this.image = new Image(localUrl);
-            System.out.println(localUrl);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }*/
+        this.image = new Image(getClass().getResource(DEFAULT_PHOTOURL).toExternalForm());
+        
     }
+    
+    public String getFilePath(){
+        return filepath;
+    }
+
+    public Image getImage(){
+        return image;
+    }
+
 }

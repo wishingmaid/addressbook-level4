@@ -46,8 +46,8 @@ public class Person implements ReadOnlyPerson {
      * Creates a copy of the given ReadOnlyPerson.
      */
     public Person(ReadOnlyPerson source) {
-        this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getRemark(), source.getPhoto(),
-                source.getTags());
+        this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getRemark(), 
+                source.getPhoto(), source.getTags());
     }
 
     public void setName(Name name) {
@@ -121,9 +121,13 @@ public class Person implements ReadOnlyPerson {
     }
 
     @Override
-    public ObjectProperty<Photo> photoProperty() { return photo; }
+    public ObjectProperty<Photo> photoProperty() {
+        return photo;
+    }
 
-    public Photo getPhoto() { return photo.get(); }
+    public Photo getPhoto() {
+        return photo.get();
+    }
     /**
      * Returns an immutable tag set, which throws {@code UnsupportedOperationException}
      * if modification is attempted.

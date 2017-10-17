@@ -1,20 +1,17 @@
 package seedu.address.ui;
-import java.awt.*;
-import java.io.File;
+
 import java.util.HashMap;
 import java.util.Random;
 
 import javafx.beans.binding.Bindings;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Region;
-import seedu.address.model.person.ReadOnlyPerson;
-
 import javafx.scene.image.ImageView;
+
+import seedu.address.model.person.ReadOnlyPerson;
 
 /**
  * An UI component that displays information of a {@code Person}.
@@ -77,7 +74,7 @@ public class PersonCard extends UiPart<Region> {
         address.textProperty().bind(Bindings.convert(person.addressProperty()));
         email.textProperty().bind(Bindings.convert(person.emailProperty()));
         remark.textProperty().bind(Bindings.convert(person.remarkProperty()));
-        imageView.setImage(person.getPhoto().image);
+        imageView.setImage(person.getPhoto().getImage());
         person.tagProperty().addListener((observable, oldValue, newValue) -> {
             tags.getChildren().clear();
             initTags(person);
