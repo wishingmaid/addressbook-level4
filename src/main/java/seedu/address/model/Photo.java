@@ -19,9 +19,8 @@ public class Photo {
 
     public Image image;
     public String filepath;
-    public boolean isValidFilePath = false; 
+    public boolean isValidFilePath = false;
     private final String DEFAULT_PHOTO_URL = "/images/noPhoto.png";
-    
     public Photo(String filepath) {
         requireNonNull(filepath);
         if(filepath.equals("")) {

@@ -137,7 +137,7 @@ Deletes the 1st person in the results of the `find` command.
 Adds a photo for the specifed person in the address book. + 
 Format: `addPhoto INDEX f/filepath` 
 
-Examples: 
+Examples:
 
 * `addPhoto 1 f/C:/users/pictures/thickThings/thic.png`
 

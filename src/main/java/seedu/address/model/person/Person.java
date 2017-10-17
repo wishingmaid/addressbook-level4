@@ -27,7 +27,6 @@ public class Person implements ReadOnlyPerson {
     private ObjectProperty<Address> address;
     private ObjectProperty<Remark> remark;
     private ObjectProperty<Photo> photo;
-    
     private ObjectProperty<UniqueTagList> tags;
 
     /**

@@ -16,9 +16,7 @@ import java.util.List;
 
 /***/
 public class AddPhotoCommand extends UndoableCommand {
-    
     public static final String COMMAND_WORD = "addPhoto";
-    
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": adds a photo to the person identified by the index number used in the last person listing.\n"
             + "Parameters: INDEX (must be a positive integer) " + PREFIX_FILEPATH + " (must be valid filepath)\n"
@@ -30,17 +28,14 @@ public class AddPhotoCommand extends UndoableCommand {
     
     private final Index index; 
     private final Photo photo;
-    
     public AddPhotoCommand(Index index, Photo photo){
         requireNonNull(index);
         requireNonNull(photo);
-        
         this.index=index;
         this.photo=photo;
     }
     
-    
-    public CommandResult executeUndoableCommand() throws CommandException {
+    public CommandResult executeUndoableCommand() throws CommandException { 
         List<ReadOnlyPerson> lastShownList = model.getFilteredPersonList();
         if (index.getZeroBased() >= lastShownList.size()) {
             throw new CommandException(Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
