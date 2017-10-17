@@ -3,6 +3,8 @@ package seedu.address.model.person;
 import java.util.Set;
 
 import javafx.beans.property.ObjectProperty;
+import javafx.scene.image.Image;
+import seedu.address.model.Photo;
 import seedu.address.model.tag.Tag;
 import seedu.address.model.tag.UniqueTagList;
 
@@ -22,6 +24,8 @@ public interface ReadOnlyPerson {
     Address getAddress();
     ObjectProperty<Remark> remarkProperty();
     Remark getRemark();
+    ObjectProperty<Photo> photoProperty();
+    Photo getPhoto();
     ObjectProperty<UniqueTagList> tagProperty();
     Set<Tag> getTags();
 

@@ -3,12 +3,15 @@ package seedu.address.model.person;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 
+import java.awt.*;
 import java.util.Collections;
 import java.util.Objects;
 import java.util.Set;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
+import javafx.scene.image.Image;
+import seedu.address.model.Photo;
 import seedu.address.model.tag.Tag;
 import seedu.address.model.tag.UniqueTagList;
 
@@ -23,19 +26,21 @@ public class Person implements ReadOnlyPerson {
     private ObjectProperty<Email> email;
     private ObjectProperty<Address> address;
     private ObjectProperty<Remark> remark;
-
+    private ObjectProperty<Photo> photo;
+    
     private ObjectProperty<UniqueTagList> tags;
 
     /**
      * Every field must be present and not null.
      */
-    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Set<Tag> tags) {
+    public Person(Name name, Phone phone, Email email, Address address, Remark remark, Photo photo, Set<Tag> tags) {
         requireAllNonNull(name, phone, email, address, tags);
         this.name = new SimpleObjectProperty<>(name);
         this.phone = new SimpleObjectProperty<>(phone);
         this.email = new SimpleObjectProperty<>(email);
         this.address = new SimpleObjectProperty<>(address);
         this.remark = new SimpleObjectProperty<>(remark);
+        this.photo = new SimpleObjectProperty<>(photo);
         // protect internal tags from changes in the arg list
         this.tags = new SimpleObjectProperty<>(new UniqueTagList(tags));
     }
@@ -44,7 +49,7 @@ public class Person implements ReadOnlyPerson {
      * Creates a copy of the given ReadOnlyPerson.
      */
     public Person(ReadOnlyPerson source) {
-        this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getRemark(),
+        this(source.getName(), source.getPhone(), source.getEmail(), source.getAddress(), source.getRemark(), source.getPhoto(),
                 source.getTags());
     }
 
@@ -118,6 +123,10 @@ public class Person implements ReadOnlyPerson {
         return remark.get();
     }
 
+    @Override
+    public ObjectProperty<Photo> photoProperty() { return photo; }
+
+    public Photo getPhoto() { return photo.get(); }
     /**
      * Returns an immutable tag set, which throws {@code UnsupportedOperationException}
      * if modification is attempted.
