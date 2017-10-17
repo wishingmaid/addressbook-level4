@@ -2,13 +2,6 @@ package seedu.address.model;
 
 
 import javafx.scene.image.Image;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import javax.imageio.ImageIO;
-
 import static java.util.Objects.requireNonNull;
 
 /**
@@ -19,7 +12,6 @@ public class Photo {
 
     public Image image;
     public String filepath;
-    public boolean isValidFilePath = false;
     private final String DEFAULT_PHOTO_URL = "/images/noPhoto.png";
     public Photo(String filepath) {
         requireNonNull(filepath);
@@ -38,6 +30,5 @@ public class Photo {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }*/
-        isValidFilePath = true;
     }
 }
