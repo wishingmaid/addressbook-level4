@@ -11,7 +11,6 @@ import javafx.scene.image.Image;
 public class Photo {
 
     private static final String DEFAULT_PHOTOURL = "/images/noPhoto.png";
-    
     private Image image;
     private String filepath;
     public Photo(String filepath) {
