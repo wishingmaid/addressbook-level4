@@ -33,7 +33,6 @@ public class AddPhotoCommand extends UndoableCommand {
         this.index=index;
         this.photo=photo;
     }
-    
     public CommandResult executeUndoableCommand() throws CommandException {
         List<ReadOnlyPerson> lastShownList = model.getFilteredPersonList();
         if (index.getZeroBased() >= lastShownList.size()) {

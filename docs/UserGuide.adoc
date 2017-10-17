@@ -134,8 +134,8 @@ Deletes the 1st person in the results of the `find` command.
 
 === Adding photo : `addPhoto`
 
-Adds a photo for the specifed person in the address book. + 
-Format: `addPhoto INDEX f/filepath` 
+Adds a photo for the specifed person in the address book. +
+Format: `addPhoto INDEX f/filepath`
 
 Examples:
 
