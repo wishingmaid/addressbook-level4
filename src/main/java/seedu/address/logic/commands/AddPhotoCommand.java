@@ -53,7 +53,7 @@ public class AddPhotoCommand extends UndoableCommand {
     }
     /**Generate success message*/
     private String generateSuccessMessage(ReadOnlyPerson personToEdit) {
-        if (!photo.filepath.isEmpty()&& photo.isValidFilePath) {
+        if (!photo.filepath.isEmpty()) {
             return String.format(MESSAGE_ADD_PHOTO_SUCCESS, personToEdit);
         } else {
             return String.format(MESSAGE_ADD_PHOTO_SUCCESS, personToEdit);
