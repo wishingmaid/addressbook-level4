@@ -12,22 +12,21 @@ public class Photo {
 
     private Image image;
     private String filepath;
-    private final String DEFAULT_PHOTOURL = "/images/noPhoto.png";
+    private static final String DEFAULT_PHOTOURL = "/images/noPhoto.png";
     public Photo(String filepath) {
         requireNonNull(filepath);
         if (filepath.equals("")) {
             this.filepath = DEFAULT_PHOTOURL;
-           // this.image= new Image(getClass().getResource(DEFAULT_PHOTO_URL).toExternalForm());
         } else {
             this.filepath = filepath;
         }
         this.image = new Image(getClass().getResource(DEFAULT_PHOTOURL).toExternalForm());
     }
-    public String getFilePath(){
+    public String getFilePath() {
         return filepath;
     }
 
-    public Image getImage(){
+    public Image getImage() {
         return image;
     }
 
