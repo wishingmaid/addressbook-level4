@@ -56,7 +56,7 @@ public class XmlAdaptedPerson {
         email = source.getEmail().value;
         address = source.getAddress().value;
         remark = source.getRemark().value;
-        filepath = source.getPhoto().filepath;
+        filepath = source.getPhoto().getFilePath();
         tagged = new ArrayList<>();
         for (Tag tag : source.getTags()) {
             tagged.add(new XmlAdaptedTag(tag));
