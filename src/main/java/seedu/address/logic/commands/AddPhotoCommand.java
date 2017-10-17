@@ -19,7 +19,7 @@ public class AddPhotoCommand extends UndoableCommand {
     public static final String COMMAND_WORD = "addPhoto";
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": adds a photo to the person identified by the index number used in the last person listing.\n"
-            + "Parameters: INDEX (must be a positive integer) " + PREFIX_FILEPATH + " (must be valid filepath)\n" 
+            + "Parameters: INDEX (must be a positive integer) " + PREFIX_FILEPATH + " (must be valid filepath)\n"
             + "Example: " + COMMAND_WORD + " 1 " + PREFIX_FILEPATH + " C:\\users\\Desktop\\imageFolder\\Books";
 
     public static final String MESSAGE_ADD_PHOTO_SUCCESS = "New photo added to: %1$s";
@@ -33,7 +33,7 @@ public class AddPhotoCommand extends UndoableCommand {
         this.index = index;
         this.photo = photo;
     }
-    @Override 
+    @Override
     public CommandResult executeUndoableCommand() throws CommandException {
         List<ReadOnlyPerson> lastShownList = model.getFilteredPersonList();
         if (index.getZeroBased() >= lastShownList.size()) {

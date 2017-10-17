@@ -22,9 +22,7 @@ public class Photo {
             this.filepath = filepath;
         }
         this.image = new Image(getClass().getResource(DEFAULT_PHOTOURL).toExternalForm());
-        
     }
-    
     public String getFilePath(){
         return filepath;
     }

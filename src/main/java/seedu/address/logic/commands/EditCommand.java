@@ -105,7 +105,7 @@ public class EditCommand extends UndoableCommand {
         Photo updatedPhoto = personToEdit.getPhoto(); //edit command does not allow editing photos
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
 
-        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedRemark, 
+        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedRemark,
                 updatedPhoto, updatedTags);
     }
 
