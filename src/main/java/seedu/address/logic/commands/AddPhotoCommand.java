@@ -25,8 +25,7 @@ public class AddPhotoCommand extends UndoableCommand {
     public static final String MESSAGE_ADD_PHOTO_SUCCESS = "New photo added to: %1$s";
     public static final String MESSAGE_EXISTING_PHOTO = "There is already a photo tied to this contact";
     public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book.";
-    
-    private final Index index; 
+    private final Index index;
     private final Photo photo;
     public AddPhotoCommand(Index index, Photo photo){
         requireNonNull(index);
@@ -35,7 +34,7 @@ public class AddPhotoCommand extends UndoableCommand {
         this.photo=photo;
     }
     
-    public CommandResult executeUndoableCommand() throws CommandException { 
+    public CommandResult executeUndoableCommand() throws CommandException {
         List<ReadOnlyPerson> lastShownList = model.getFilteredPersonList();
         if (index.getZeroBased() >= lastShownList.size()) {
             throw new CommandException(Messages.MESSAGE_INVALID_PERSON_DISPLAYED_INDEX);
