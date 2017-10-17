@@ -26,7 +26,6 @@ public class PersonBuilder {
     public static final String DEFAULT_REMARK = "";
     public static final String DEFAULT_TAGS = "friends";
     public static final String DEFAULT_FILEPATH = "";
-    
     private Person person;
 
     public PersonBuilder() {
