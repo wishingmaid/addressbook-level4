@@ -1,7 +1,5 @@
 package seedu.address.model;
 
-import static java.util.Objects.requireNonNull;
-
 import javafx.scene.image.Image;
 
 /**
@@ -14,7 +12,6 @@ public class Photo {
     private Image image;
     private String filepath;
     public Photo(String filepath) {
-        requireNonNull(filepath);
         if (filepath.equals("")) {
             this.filepath = DEFAULT_PHOTOURL;
         } else {
