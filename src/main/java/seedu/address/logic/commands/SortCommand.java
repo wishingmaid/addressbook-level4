@@ -36,23 +36,19 @@ public class SortCommand extends UndoableCommand {
     private final String parameter;
     private String sortParam;
 
-    public SortCommand(String parameter)
-    {
+    public SortCommand(String parameter) {
         requireNonNull(parameter);
 
         this.parameter = parameter;
     }
 
     @Override
-    public CommandResult executeUndoableCommand() throws CommandException
-    {
+    public CommandResult executeUndoableCommand() throws CommandException {
         Comparator<ReadOnlyPerson> sortComparator = getSortComparator(this.parameter);
-        try
-        {
+        try {
             model.sortPerson(sortComparator);
         }
-        catch (EmptyBookException a)
-        {
+        catch (EmptyBookException a) {
             throw new CommandException(MESSAGE_EMPTY_BOOK);
         }
 
@@ -61,32 +57,30 @@ public class SortCommand extends UndoableCommand {
         return new CommandResult(String.format(MESSAGE_SORT_SUCCESS, sortParam));
     }
 
-    private Comparator<ReadOnlyPerson> getSortComparator(String field)
-    {
-        switch (parameter)
-        {
-            case PREFIX_NAME:
-                this.sortParam = "name";
-                return (o1, o2) -> o1.getName().toString().compareToIgnoreCase(o2.getName().toString());
+    private Comparator<ReadOnlyPerson> getSortComparator(String field) {
+        switch (parameter) {
+        case PREFIX_NAME:
+            this.sortParam = "name";
+            return (o1, o2) -> o1.getName().toString().compareToIgnoreCase(o2.getName().toString());
 
-            case PREFIX_EMAIL:
-                this.sortParam = "email";
-                return (o1, o2) -> o1.getEmail().toString().compareToIgnoreCase(o2.getEmail().toString());
+        case PREFIX_EMAIL:
+            this.sortParam = "email";
+            return (o1, o2) -> o1.getEmail().toString().compareToIgnoreCase(o2.getEmail().toString());
 
-            case PREFIX_PHONE:
-                this.sortParam = "phone";
-                return (o1, o2) -> o1.getPhone().toString().compareToIgnoreCase(o2.getPhone().toString());
+        case PREFIX_PHONE:
+            this.sortParam = "phone";
+            return (o1, o2) -> o1.getPhone().toString().compareToIgnoreCase(o2.getPhone().toString());
 
-            case PREFIX_ADDRESS:
-                this.sortParam = "address";
-                return (o1, o2) -> o1.getAddress().toString().compareToIgnoreCase(o2.getAddress().toString());
+         case PREFIX_ADDRESS:
+            this.sortParam = "address";
+            return (o1, o2) -> o1.getAddress().toString().compareToIgnoreCase(o2.getAddress().toString());
 
-            case PREFIX_TAG:
-                this.sortParam = "tag";
-                return (o1, o2) -> o1.getTags().toString().compareToIgnoreCase(o2.getTags().toString());
+        case PREFIX_TAG:
+            this.sortParam = "tag";
+            return (o1, o2) -> o1.getTags().toString().compareToIgnoreCase(o2.getTags().toString());
 
-            default:
-                return (o1, o2) -> o1.getName().toString().compareToIgnoreCase(o2.getName().toString());
+        default:
+            return (o1, o2) -> o1.getName().toString().compareToIgnoreCase(o2.getName().toString());
         }
     }
 

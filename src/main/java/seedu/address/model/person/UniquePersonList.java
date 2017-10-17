@@ -11,7 +11,6 @@ import org.fxmisc.easybind.EasyBind;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import seedu.address.commons.util.CollectionUtil;
 import seedu.address.model.person.exceptions.DuplicatePersonException;
 import seedu.address.model.person.exceptions.EmptyBookException;
 import seedu.address.model.person.exceptions.PersonNotFoundException;
@@ -55,11 +54,9 @@ public class UniquePersonList implements Iterable<Person> {
      * @param sortComparator
      * @throws EmptyBookException
      */
-    public void sort(Comparator sortComparator) throws EmptyBookException
-    {
+    public void sort(Comparator sortComparator) throws EmptyBookException {
         requireNonNull(sortComparator);
-        if (internalList.size() < 1)
-        {
+        if (internalList.size() < 1) {
             throw new EmptyBookException();
         }
 

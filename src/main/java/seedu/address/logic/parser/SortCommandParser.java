@@ -12,12 +12,16 @@ import java.util.function.Consumer;
 import seedu.address.logic.commands.SortCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 
-public class SortCommandParser implements Parser<SortCommand>{
+public class SortCommandParser implements Parser<SortCommand> {
 
     private String parameter;
 
-    public SortCommand parse(String args) throws ParseException
-    {
+    /**
+     * Parses the given {@code String} of arguments in the context of the SortCommand
+     * and returns an SortCommand object for execution.
+     * @throws ParseException if the user input does not conform the expected format
+     */
+    public SortCommand parse(String args) throws ParseException {
         requireNonNull(args);
         ArgumentMultimap argMultimap =
                 ArgumentTokenizer.tokenize(args, PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ADDRESS);
@@ -27,8 +31,7 @@ public class SortCommandParser implements Parser<SortCommand>{
                     SortCommand.MESSAGE_USAGE));
         }
 
-        if(argMultimap.size() == 1)
-        {
+        if (argMultimap.size() == 1) {
             this.parameter = PREFIX_NAME.getPrefix();
         }
 
@@ -44,8 +47,7 @@ public class SortCommandParser implements Parser<SortCommand>{
         return new SortCommand (parameter);
     }
 
-    private Consumer<String> updateParam (Prefix prefix)
-    {
+    private Consumer<String> updateParam (Prefix prefix) {
         return s -> parameter = prefix.toString();
     }
 

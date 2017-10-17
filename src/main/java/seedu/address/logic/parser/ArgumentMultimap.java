@@ -63,8 +63,7 @@ public class ArgumentMultimap {
     /**
      * Returns the size of the ArgMultimap instance
      */
-    public int size()
-    {
+    public int size() {
         return argMultimap.size();
     }
 }
