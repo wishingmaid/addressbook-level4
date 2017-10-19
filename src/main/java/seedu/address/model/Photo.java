@@ -15,7 +15,7 @@ public class Photo {
     private Image image;
     private String filepath;
     public Photo(String filepath) {
-        if (filepath.equals("")) {
+        if (filepath.equals("/images/noPhoto.png")) {
             this.filepath = DEFAULT_PHOTOURL;
             this.image = new Image(getClass().getResource(this.filepath).toExternalForm());
         } else {
@@ -24,7 +24,6 @@ public class Photo {
             File file = new File(filepath);
             String localUrl = file.toURI().toURL().toString();
             this.image = new Image(localUrl);
-            System.out.println(localUrl);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

@@ -31,7 +31,7 @@ public class AddPhotoCommandParser implements Parser<AddPhotoCommand> {
         } catch (IllegalValueException ive) {
             throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddPhotoCommand.MESSAGE_USAGE));
         }
-        String filepath = argMultimap.getValue(PREFIX_FILEPATH).orElse("");
+        String filepath = argMultimap.getValue(PREFIX_FILEPATH).orElse("/images/noPhoto.png");
         return new AddPhotoCommand(index, new Photo(filepath));
     }
 }
