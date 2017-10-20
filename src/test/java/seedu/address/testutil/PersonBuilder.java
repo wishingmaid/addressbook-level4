@@ -119,6 +119,9 @@ public class PersonBuilder {
         return this;
     }
 
+    /**
+     * Sets the {@code Photo} of the {@code Person} that we are building.
+     */
     public PersonBuilder withPhoto(String filepath) {
         this.person.setPhoto(new Photo(filepath));
         return this;
