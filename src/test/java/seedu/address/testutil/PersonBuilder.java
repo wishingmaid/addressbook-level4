@@ -119,7 +119,7 @@ public class PersonBuilder {
         return this;
     }
 
-    public PersonBuilder withPhoto(String filepath){
+    public PersonBuilder withPhoto(String filepath) {
         this.person.setPhoto(new Photo(filepath));
         return this;
     }
