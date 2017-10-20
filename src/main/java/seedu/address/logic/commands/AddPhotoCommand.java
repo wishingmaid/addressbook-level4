@@ -17,7 +17,7 @@ import seedu.address.model.person.exceptions.PersonNotFoundException;
 
 /***/
 public class AddPhotoCommand extends UndoableCommand {
-    public static final String COMMAND_WORD = "addPhoto";
+    public static final String COMMAND_WORD = "addphoto";
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": adds a photo to the person identified by the index number used in the last person listing.\n"
             + "Parameters: INDEX (must be a positive integer) " + PREFIX_FILEPATH + " (must be valid filepath)\n"
