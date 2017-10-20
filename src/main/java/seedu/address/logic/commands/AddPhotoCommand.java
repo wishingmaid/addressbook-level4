@@ -8,6 +8,7 @@ import java.util.List;
 import seedu.address.commons.core.Messages;
 import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.exceptions.CommandException;
+import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.Photo;
 import seedu.address.model.person.Person;
 import seedu.address.model.person.ReadOnlyPerson;
@@ -23,8 +24,8 @@ public class AddPhotoCommand extends UndoableCommand {
             + "Example: " + COMMAND_WORD + " 1 " + PREFIX_FILEPATH + " C:\\users\\Desktop\\imageFolder\\Books";
 
     public static final String MESSAGE_ADD_PHOTO_SUCCESS = "New photo added to: %1$s";
-    public static final String MESSAGE_EXISTING_PHOTO = "There is already a photo tied to this contact";
-    public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in the address book.";
+    public static final String MESSAGE_EXISTING_PHOTO = "There is already a photo tied to this contact.";
+    public static final String MESSAGE_DUPLICATE_PERSON = "This person already exists in PEERSONAL.";
     private final Index index;
     private final Photo photo;
     public AddPhotoCommand(Index index, Photo photo) {
@@ -47,7 +48,7 @@ public class AddPhotoCommand extends UndoableCommand {
         } catch (DuplicatePersonException dpe) {
             throw new CommandException(MESSAGE_DUPLICATE_PERSON);
         } catch (PersonNotFoundException pnfe) {
-            throw new AssertionError("The target person cannot be missing");
+            throw new AssertionError("The target person cannot be missing.");
         }
         model.getFilteredPersonList();
         return new CommandResult(generateSuccessMessage(editedPerson));

@@ -25,7 +25,7 @@ public class PersonBuilder {
     public static final String DEFAULT_ADDRESS = "123, Jurong West Ave 6, #08-111";
     public static final String DEFAULT_REMARK = "";
     public static final String DEFAULT_TAGS = "friends";
-    public static final String DEFAULT_FILEPATH = "";
+    public static final String DEFAULT_FILEPATH = "/images/noPhoto.png";
     private Person person;
 
     public PersonBuilder() {
@@ -119,6 +119,10 @@ public class PersonBuilder {
         return this;
     }
 
+    public PersonBuilder withPhoto(String filepath){
+        this.person.setPhoto(new Photo(filepath));
+        return this;
+    }
     public Person build() {
         return this.person;
     }

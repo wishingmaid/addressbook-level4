@@ -127,7 +127,11 @@ public class Person implements ReadOnlyPerson {
 
     public Photo getPhoto() {
         return photo.get();
-    }
+    } 
+
+    public void setPhoto(Photo photo) { 
+        this.photo.set(requireNonNull(photo));
+    } 
     /**
      * Returns an immutable tag set, which throws {@code UnsupportedOperationException}
      * if modification is attempted.
