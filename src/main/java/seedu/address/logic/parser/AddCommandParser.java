@@ -47,7 +47,7 @@ public class AddCommandParser implements Parser<AddCommand> {
             Email email = ParserUtil.parseEmail(argMultimap.getValue(PREFIX_EMAIL)).get();
             Address address = ParserUtil.parseAddress(argMultimap.getValue(PREFIX_ADDRESS)).get();
             Remark remark = new Remark(""); // add command does not allow adding remarks straight away
-            Photo photo = new Photo("/images/noPhoto.png"); // add command does not allow adding photo straight 
+            Photo photo = new Photo("/images/noPhoto.png"); // add command does not allow adding photo straight
                                                                     // away
             Set<Tag> tagList = ParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));
 
