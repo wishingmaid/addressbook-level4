@@ -23,18 +23,18 @@ public class Photo {
         } else {
             this.filepath = filepath;
             File file = new File(filepath);
-        if (isValidFilePath(file)) {
+            if (isValidFilePath(file)) {
                 try {
                     String localUrl = file.toURI().toURL().toString();
                     this.image = new Image(localUrl);
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
-        } else {
-            throw new IllegalArgumentException(URL_VALIDATION);
+            } else {
+                throw new IllegalArgumentException(URL_VALIDATION);
+            }
         }
     }
-}
 
     public static boolean isValidFilePath(File file) {
         return file.exists();

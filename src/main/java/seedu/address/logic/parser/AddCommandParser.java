@@ -48,7 +48,7 @@ public class AddCommandParser implements Parser<AddCommand> {
             Address address = ParserUtil.parseAddress(argMultimap.getValue(PREFIX_ADDRESS)).get();
             Remark remark = new Remark(""); // add command does not allow adding remarks straight away
             Photo photo = new Photo("/images/noPhoto.png"); // add command does not allow adding photo straight
-                                                                    // away
+            // away
             Set<Tag> tagList = ParserUtil.parseTags(argMultimap.getAllValues(PREFIX_TAG));
 
             ReadOnlyPerson person = new Person(name, phone, email, address, remark, photo, tagList);
