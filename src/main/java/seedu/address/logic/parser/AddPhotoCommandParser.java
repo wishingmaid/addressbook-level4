@@ -34,7 +34,7 @@ public class AddPhotoCommandParser implements Parser<AddPhotoCommand> {
             return new AddPhotoCommand(index, photo);
         } catch (IllegalValueException ive) {
             throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, AddPhotoCommand.MESSAGE_USAGE));
-        } catch (IllegalArgumentException e) { 
+        } catch (IllegalArgumentException e) {
             throw new ParseException(e.getMessage(), e);
         }
     }
